@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <div id="toolbar">
+      <button id="boldBtn">Bold</button>
+      <button id="italicBtn">Italic</button>
+      <button id="strikeBtn">Strikethrough</button>
+      <button id="bulletBtn">Bullet Points</button>
+      <button id="numberBtn">Numbered List</button>
+      <button id="headingBtn">Heading</button>
+      <button id="subheadingBtn">Subheading</button>
+      <button id="bodyBtn">Body</button>
+      <button id="checklistBtn">Checklist</button>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <div id="contextMenu" class="hidden">
+      <ul>
+        <li data-command="bold">Bold</li>
+        <li data-command="italic">Italic</li>
+        <li data-command="strikeThrough">Strikethrough</li>
+        <li data-command="insertUnorderedList">Bullet Points</li>
+        <li data-command="insertOrderedList">Numbered List</li>
+        <li data-command="formatBlock" data-value="h1">Heading</li>
+        <li data-command="formatBlock" data-value="h2">Subheading</li>
+        <li data-command="formatBlock" data-value="p">Body</li>
+        <li data-command="insertChecklist">Checklist</li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
